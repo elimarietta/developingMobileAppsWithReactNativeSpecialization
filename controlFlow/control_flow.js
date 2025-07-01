@@ -44,3 +44,30 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+
+let isAuthenticated = true;
+
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+console.log("Authentication Status:", authenticationStatus);
+
+let personType = "Employee";
+
+switch (personType) {
+    case "Employee":
+        accessCategory = "Full access to dietary services";
+        break;
+    case "Enrolled Member":
+        accessCategory = "Full access to dietary services + 1:1 with dietician";
+        break;
+    case "Employee":
+        accessCategory = "Partial access to dietary services";
+        break;
+    case "Non-Subscriber":
+        accessCategory = "No acces; please enroll or subscribe to obtain access";
+        break;
+    default:
+        accessCategory = "Unknown";
+}
+
+console.log("Access status:", accessCategory);
